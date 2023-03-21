@@ -1,4 +1,81 @@
-div div:first-child {
+/* VARIABLES */
+
+:root {
+	
+}
+
+
+/* CLASSES */
+
+.imgcenter {
+  	display: block;
+  	margin: auto
+}
+.header {
+	float: left;
+}
+.headerimg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* PSEUDOCLASSES */
+
+header *::selection {
+	color: black;
+	background-color: white;
+}
+nav *::selection {
+	color: black;
+	background-color: white;
+}
+section *::selection {
+	color: white;
+	background-color: black;
+}
+footer *::selection {
+	color: black;
+	background-color: white;
+}
+nav td:hover {
+	background-color: #353535;
+	color: white;
+}
+
+
+/* FONTS */
+
+@font-face {
+  	font-family: ransomblancozero;
+  	src: url('https://nortonsellinger.github.io/Warehouse/FONTS/RansomBlancoZero.otf');
+  	format('otf');
+}
+@font-face {
+  	font-family: crashalert;
+  	src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CrashAlert.ttf');
+  format('ttf');
+}
+@font-face{
+  	font-family: freeride;
+  	src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Freeride.otf');
+  	format('otf');
+}
+
+
+/* SELECTORS */
+
+header div {
+	font-family: ransomblancozero;
+	width: 100%;
+	height: 20%;
+	max-height: 20vw;
+	float: left;
+}
+nav div {
+	max-width: 20%;
+}
+nav div div:first-child {
     border-radius: 0px 10px 0px 0px;
 }
 div div:last-child {
