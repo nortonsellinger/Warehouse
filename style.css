@@ -10,14 +10,13 @@
 .imgcenter {
   	display: block;
   	margin: auto;
+        object-fit: contain;
 }
 .header {
 	float: left;
 }
 .headerimg {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+	width: 20%;
 }
 
 /* PSEUDOCLASSES */
@@ -65,7 +64,7 @@ nav td:hover {
 
 /* SELECTORS */
 
-header div {
+header {
 	font-family: ransomblancozero;
 	width: 100%
 	
@@ -73,10 +72,10 @@ header div {
 nav {
 	margin-top: 10px;
 }
-nav div {
+nav {
 	/*max-width: 20%;*/
 }
-nav div div {
+nav div {
         font-family: freeride;
         color: white;
 	background-color: black;
@@ -85,9 +84,9 @@ nav div div {
 	border-radius: 0px 5px 5px 0px;
 	
 }
-nav div div:first-child {
+nav div:first-child {
     border-radius: 0px 10px 5px 0px;
 }
-nav div div:last-child {
+nav div:last-child {
     border-radius: 0px 5px 10px 0px;
 }
