@@ -12,12 +12,13 @@
   	margin: auto;
         object-fit: contain;
 }
-.header {
-	float: left;
+.headerlogo {
+        width: 20%;
 }
-.headerimg {
-	width: 20%;
+.headertitle {
+        
 }
+
 
 /* PSEUDOCLASSES */
 
@@ -86,11 +87,12 @@ nav div {
         color: white;
 	background-color: black;
         padding: 4px;
-	margin: 0px 0px 0px 4px;
+	margin-bottom: 4px;
 	border-radius: 0px 5px 5px 0px;
 	
 }
 nav div:first-child {
+    margin-bottom: 4px;
     border-radius: 0px 10px 5px 0px;
 }
 nav div:last-child {
