@@ -65,6 +65,9 @@ nav div:hover {
 
 /* SELECTORS */
 
+body {
+    margin: 0px;
+}
 header {
 	font-family: ransomblancozero;
 	width: 100%;
