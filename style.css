@@ -37,7 +37,7 @@ footer *::selection {
 	color: black;
 	background-color: white;
 }
-nav td:hover {
+nav div:hover {
 	background-color: #353535;
 	color: white;
 }
@@ -66,21 +66,27 @@ nav td:hover {
 
 header {
 	font-family: ransomblancozero;
-	width: 100%
+	width: 100%;
+        color: white;
+        background-color: black;
 	
+}
+header div {
+        float: left;
 }
 nav {
 	margin-top: 10px;
+        clear: both;
 }
 nav {
-	/*max-width: 20%;*/
+	max-width: 20%;
 }
 nav div {
         font-family: freeride;
         color: white;
 	background-color: black;
         padding: 4px;
-	margin: 4px;
+	margin: 0px 0px 0px 4px;
 	border-radius: 0px 5px 5px 0px;
 	
 }
