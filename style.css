@@ -9,14 +9,15 @@
 
 /* CLASSES */
 
-.logoimg {
+.headerimg {
     object-fit: contain;
 }
 .headerlogo {
-    width: 20%;
+    width: var(--NAVWIDTH);
+    border: 2px solid yellow;
 }
 .headertitle {
-        
+    font-family: ransomblancozero;
 }
 
 
@@ -66,25 +67,26 @@ nav div:hover {
 /* SELECTORS */
 
 body {
+    width: 100%;
     margin: 0px;
+    padding: 0px;
 }
 header {
-	font-family: ransomblancozero;
-	width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 4px;
+	align-items: center;
+	
     color: white;
     background-color: black;
 	
 }
-header div {
-    float: left;
-}
+
 nav {
 	margin-top: 10px;
-    clear: both;
+    max-width: 20%;
 }
-nav {
-	max-width: 20%;
-}
+
 nav div {
     font-family: freeride;
     color: white;
