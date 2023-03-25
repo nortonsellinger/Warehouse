@@ -7,11 +7,15 @@ const dvc_ratio = dvc_width / dvc_height;
 //ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --DEVICE_RATIO В CSS ВЫЧИСЛЕННОЕ СООТНОШЕНИЕ СТОРОН УСТРОЙСТВА
 document.documentElement.style.setProperty('--DEVICE_RATIO', 'device_ratio');
 //ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --NAVWIDTH В CSS ЗНАЧЕНИЕ ШИРИНЫ ПАНЕЛИ НАВИГАЦИИ
-let NAV_WIDTH = document.querySelector('nav').offsetWidth;
+var NAV_WIDTH = document.querySelector('nav').offsetWidth;
 document.documentElement.style.setProperty('--NAV_WIDTH', NAV_WIDTH + 'px');
-
+//УСТАНАВЛИВАЕМ ПЕРЕМЕННУЮ ПАДДИНГА ДЛЯ ХЕДЕРА
+var HEADER_PADDING = 6;
+//ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --PADDING В CSS ЗНАЧЕНИЕ ПЕРЕМЕННОЙ HEADER_PADDING
+document.querySelector('header').style.setProperty('--PADDING', HEADER_PADDING + 'px');
+//УСТАНАВИВАЕМ ПЕРЕМЕННУЮ ШИРИНЫ КАРТИНКИ ДЛЯ ХЕДЕРА
 let IMAGE_WIDTH =
-Math.min(NAV_WIDTH, document.querySelector('.headerlogo').style.getPropertyValue(max-height)) - 
-document.querySelector('header').style.getPropertyValue(--PADDING) * 2;
-
-document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', NIMAGE_WIDTH + 'px');
+Math.min(NAV_WIDTH, 0.07 * Math.max(window.innerWidth, window.innerHeight)) - 
+HEADER_PADDING * 2;
+//ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --IMAGE_WIDTH В CSS ЗНАЧЕНИЕ ПЕРЕМЕННОЙ IMAGE_WIDTH
+document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', IMAGE_WIDTH + 'px');
