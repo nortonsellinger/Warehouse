@@ -23,7 +23,7 @@
     :root {
         /* COMMON */
     	--DEVICE_RATIO;
-        --NAVWIDTH;
+        --NAV_WIDTH;
     }
 
     /* SELECTORS */
@@ -48,22 +48,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     box-sizing: border-box;
-    width: var(--NAVWIDTH);
+    max-width: var(--NAV_WIDTH);
+    max-height: 7vmax;
     border: 2px solid yellow;
     padding: var(--PADDING);
 }
     .headerimg {
-        object-fit: contain;
+        --IMAGE_WIDTH;
+        width: var(--IMAGE_WIDTH);
     }
 .headertitle {
+    width: 100%;
     padding: var(--PADDING);
     padding-left: calc(var(--PADDING) + 4px);
     box-sizing: border-box;
     border: 2px solid blue;
     font-family: ransomblancozero;
-    font-size: 60pt;
+    font-size: 65.3pt;
 }
 header *::selection {
 	color: black;
