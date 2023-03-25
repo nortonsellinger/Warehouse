@@ -9,4 +9,3 @@ document.documentElement.style.setProperty('--DEVICE_RATIO', 'device_ratio');
 //ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --NAVWIDTH В CSS ЗНАЧЕНИЕ ШИРИНЫ ПАНЕЛИ НАВИГАЦИИ
 let NAVWIDTH = document.querySelector('nav').offsetWidth;
 document.documentElement.style.setProperty('--NAVWIDTH', NAVWIDTH + 'px');
-alert(NAVWIDTH);
