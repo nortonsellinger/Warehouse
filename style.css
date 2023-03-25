@@ -1,100 +1,94 @@
-/* VARIABLES */
+/* O-V-E-R-A-L-L */
 
-:root {
-    /* COMMON */
-	--DEVICE_RATIO;
-    --NAVWIDTH;
-}
+    /* FONTS */
 
+    @font-face {
+        font-family: ransomblancozero;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/RansomBlancoZero.otf');
+        format('otf');
+    }
+    @font-face {
+        font-family: crashalert;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CrashAlert.ttf');
+        format('ttf');
+    }
+    @font-face{
+        font-family: freeride;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Freeride.otf');
+        format('otf');
+    }
 
-/* CLASSES */
+    /* VARIABLES */
 
-.headerimg {
-    object-fit: contain;
+    :root {
+        /* COMMON */
+    	--DEVICE_RATIO;
+        --NAVWIDTH;
+    }
+
+    /* SELECTORS */
+    body {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+/* H-E-A-D-E-R */
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    background-color: black;
+    --PADDING: 6px;
 }
 .headerlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-sizing: border-box;
     width: var(--NAVWIDTH);
-    /*border: 2px solid yellow;*/
+    border: 2px solid yellow;
+    padding: var(--PADDING);
 }
+    .headerimg {
+        object-fit: contain;
+    }
 .headertitle {
+    padding: var(--PADDING);
+    padding-left: calc(var(--PADDING) + 4px);
+    box-sizing: border-box;
+    border: 2px solid blue;
     font-family: ransomblancozero;
+    font-size: 60pt;
 }
-
-
-/* PSEUDOCLASSES */
-
 header *::selection {
 	color: black;
 	background-color: white;
 }
-nav *::selection {
-	color: black;
-	background-color: white;
-}
-section *::selection {
-	color: white;
-	background-color: black;
-}
-footer *::selection {
-	color: black;
-	background-color: white;
-}
-nav div:hover {
-	background-color: #353535;
-	color: white;
-}
 
 
-/* FONTS */
-
-@font-face {
-  	font-family: ransomblancozero;
-  	src: url('https://nortonsellinger.github.io/Warehouse/FONTS/RansomBlancoZero.otf');
-  	format('otf');
-}
-@font-face {
-  	font-family: crashalert;
-  	src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CrashAlert.ttf');
-    format('ttf');
-}
-@font-face{
-  	font-family: freeride;
-  	src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Freeride.otf');
-  	format('otf');
-}
-
-
-/* SELECTORS */
-
-body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-header {
-    display: flex;
-    box-sizing: border-box;
-    
-	align-items: center;
-	;
-    color: white;
-    background-color: black;
-	--PADDING: 4px;
-}
+/* N-A-V-I-G-A-T-I-O-N */
 
 nav {
-	margin-top: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 10px;
     max-width: 20%;
 }
-
 nav div {
     font-family: freeride;
     color: white;
-	background-color: black;
+    background-color: black;
     padding: 4px;
-	margin-bottom: 4px;
-	border-radius: 0px 5px 5px 0px;
-	
+    margin-bottom: 4px;
+    border-radius: 0px 5px 5px 0px;
+    
 }
 nav div:first-child {
     margin-bottom: 4px;
@@ -103,3 +97,31 @@ nav div:first-child {
 nav div:last-child {
     border-radius: 0px 5px 10px 0px;
 }
+nav *::selection {
+	color: black;
+	background-color: white;
+}
+nav div:hover {
+    background-color: #353535;
+    color: white;
+}
+
+
+/* S-E-C-T-I-O-N */
+
+section *::selection {
+	color: white;
+	background-color: black;
+}
+
+
+/* F-O-O-T-E-R */
+
+footer *::selection {
+	color: black;
+	background-color: white;
+}
+
+
+
+
