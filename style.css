@@ -7,13 +7,11 @@
 
 /* CLASSES */
 
-.imgcenter {
-  	display: block;
-  	margin: auto;
-        object-fit: contain;
+.logoimg {
+    object-fit: contain;
 }
 .headerlogo {
-        width: 20%;
+    width: 20%;
 }
 .headertitle {
         
@@ -54,7 +52,7 @@ nav div:hover {
 @font-face {
   	font-family: crashalert;
   	src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CrashAlert.ttf');
-  format('ttf');
+    format('ttf');
 }
 @font-face{
   	font-family: freeride;
@@ -71,25 +69,25 @@ body {
 header {
 	font-family: ransomblancozero;
 	width: 100%;
-        color: white;
-        background-color: black;
+    color: white;
+    background-color: black;
 	
 }
 header div {
-        float: left;
+    float: left;
 }
 nav {
 	margin-top: 10px;
-        clear: both;
+    clear: both;
 }
 nav {
 	max-width: 20%;
 }
 nav div {
-        font-family: freeride;
-        color: white;
+    font-family: freeride;
+    color: white;
 	background-color: black;
-        padding: 4px;
+    padding: 4px;
 	margin-bottom: 4px;
 	border-radius: 0px 5px 5px 0px;
 	
