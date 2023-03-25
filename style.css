@@ -1,7 +1,9 @@
 /* VARIABLES */
 
 :root {
-	
+    /* COMMON */
+	--DEVICE_RATIO;
+    --NAVWIDTH;
 }
 
 
