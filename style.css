@@ -65,7 +65,7 @@ header {
     box-sizing: border-box;
     border: 2px solid blue;
     font-family: ransomblancozero;
-    font-size: 65.3pt;
+    font-size: 45pt;
 }
 header *::selection {
 	color: black;
