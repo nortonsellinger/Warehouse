@@ -15,7 +15,7 @@ var HEADER_PADDING = 6;
 document.querySelector('header').style.setProperty('--PADDING', HEADER_PADDING + 'px');
 //УСТАНАВИВАЕМ ПЕРЕМЕННУЮ ШИРИНЫ КАРТИНКИ ДЛЯ ХЕДЕРА
 let IMAGE_WIDTH =
-Math.min(NAV_WIDTH, 0.07 * Math.max(window.innerWidth, window.innerHeight)) - 
+Math.min(NAV_WIDTH, 0.05 * Math.max(screen.width, screen.height)) - 
 HEADER_PADDING * 2;
 //ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --IMAGE_WIDTH В CSS ЗНАЧЕНИЕ ПЕРЕМЕННОЙ IMAGE_WIDTH
 document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', IMAGE_WIDTH + 'px');

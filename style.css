@@ -73,49 +73,67 @@ header *::selection {
 }
 
 
-/* N-A-V-I-G-A-T-I-O-N */
+/* C-O-N-T-E-N-T */
 
-nav {
-    display: inline-flex;
-    flex-direction: column;
+#content {
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 10px;
-    max-width: 20%;
-    border: 2px solid red;
-}
-nav div {
-    font-family: freeride;
-    color: white;
-    background-color: black;
-    padding: 4px;
-    margin-bottom: 4px;
-    border-radius: 0px 5px 5px 0px;
-    
-}
-nav div:first-child {
-    margin-bottom: 4px;
-    border-radius: 0px 10px 5px 0px;
-}
-nav div:last-child {
-    border-radius: 0px 5px 10px 0px;
-}
-nav *::selection {
-	color: black;
-	background-color: white;
-}
-nav div:hover {
-    background-color: #353535;
-    color: white;
+
 }
 
+    /* NAVIGATION */
 
-/* S-E-C-T-I-O-N */
+    nav {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 10px;
+        max-width: 20%;
+        border: 2px solid red;
+    }
+    nav div {
+        font-family: freeride;
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-bottom: 4px;
+        border: 2px solid purple;
+        border-radius: 0px 5px 5px 0px;
+        
+    }
+    nav div:first-child {
+        margin-bottom: 4px;
+        border-radius: 0px 10px 5px 0px;
+    }
+    nav div:last-child {
+        border-radius: 0px 5px 10px 0px;
+    }
+    nav *::selection {
+    	color: black;
+    	background-color: white;
+    }
+    nav div:hover {
+        background-color: #353535;
+        color: white;
+    }
 
-section *::selection {
-	color: white;
-	background-color: black;
-}
+
+    /* SECTION */
+
+    section {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin-top: 10px;
+    }
+    section *::selection {
+    	color: white;
+    	background-color: black;
+    }
 
 
 /* F-O-O-T-E-R */
