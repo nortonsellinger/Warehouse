@@ -65,7 +65,7 @@ header {
     box-sizing: border-box;
     border: 2px solid blue;
     font-family: ransomblancozero;
-    font-size: 45pt;
+    font-size: 25pt;
 }
 header *::selection {
 	color: black;
@@ -82,6 +82,7 @@ nav {
     align-items: flex-start;
     margin-top: 10px;
     max-width: 20%;
+    border: 2px solid red;
 }
 nav div {
     font-family: freeride;
