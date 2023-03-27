@@ -27,7 +27,7 @@ function DefinePageParams() {
     header_padding = header_pad_coeff * MAX_HEADER_HEIGHT;
     document.querySelector('header').style.setProperty('--PADDING', header_padding + 'px');
 
-    TITLE_PADDING = header_padding + 6;
+    TITLE_PADDING = header_padding * 2;
     document.querySelector('.headertitle').style.setProperty('--TITLE_PADDING', TITLE_PADDING + 'px');
     
     HEADER_FONT_SIZE = MAX_HEADER_HEIGHT - TITLE_PADDING * 2;
