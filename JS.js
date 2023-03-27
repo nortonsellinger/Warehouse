@@ -11,15 +11,26 @@ var NAV_WIDTH = document.querySelector('nav').offsetWidth;
 document.documentElement.style.setProperty('--NAV_WIDTH', NAV_WIDTH + 'px');
 
 //УСТАНАВЛИВАЕМ ПЕРЕМЕННУЮ ПАДДИНГА ДЛЯ ХЕДЕРА
-var HEADER_PADDING = 6;
-//ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --PADDING В CSS ЗНАЧЕНИЕ ПЕРЕМЕННОЙ HEADER_PADDING
-document.querySelector('header').style.setProperty('--PADDING', HEADER_PADDING + 'px');
+var header_padding = 6;
+
+//ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --PADDING В CSS ЗНАЧЕНИЕ ПЕРЕМЕННОЙ header_padding
+document.querySelector('header').style.setProperty('--PADDING', header_padding + 'px');
+
+var max_header_coeff = 0.05;
+var MAX_HEADER_HEIGHT = max_header_coeff * Math.max(screen.width, screen.height);
 var IMAGE_WIDTH;
+var HEADER_FONT_SIZE = MAX_HEADER_HEIGHT - header_padding * 2;
+document.querySelector('header').style.setProperty('--HEADER_FONT_SIZE', HEADER_FONT_SIZE + 'px');
+
 window.addEventListener("resize", RatioChange());
+
 function RatioChange() {
-    IMAGE_WIDTH = Math.min(NAV_WIDTH, 0.05 * Math.max(screen.width, screen.height)) - 
-HEADER_PADDING * 2;
+	MAX_HEADER_HEIGHT = max_header_coeff * Math.max(screen.width, screen.height);
+    IMAGE_WIDTH = Math.min(NAV_WIDTH, MAX_HEADER_HEIGHT) - header_padding * 2;
     document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', IMAGE_WIDTH + 'px');
+
+    HEADER_FONT_SIZE = MAX_HEADER_HEIGHT - header_padding * 2;
+document.querySelector('header').style.setProperty('--HEADER_FONT_SIZE', HEADER_FONT_SIZE + 'px');
 }
 //УСТАНАВИВАЕМ ПЕРЕМЕННУЮ ШИРИНЫ КАРТИНКИ ДЛЯ ХЕДЕРА
 
