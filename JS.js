@@ -6,32 +6,37 @@ const dvc_height = window.screen.height;
 const dvc_ratio = dvc_width / dvc_height;
 //ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --DEVICE_RATIO В CSS ВЫЧИСЛЕННОЕ СООТНОШЕНИЕ СТОРОН УСТРОЙСТВА
 document.documentElement.style.setProperty('--DEVICE_RATIO', 'device_ratio');
-//ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --NAVWIDTH В CSS ЗНАЧЕНИЕ ШИРИНЫ ПАНЕЛИ НАВИГАЦИИ
-var NAV_WIDTH = document.querySelector('nav').offsetWidth;
+
+
+
+
+var NAV_WIDTH = document.getElementById('nav').offsetWidth;
 document.documentElement.style.setProperty('--NAV_WIDTH', NAV_WIDTH + 'px');
 
-//УСТАНАВЛИВАЕМ ПЕРЕМЕННУЮ ПАДДИНГА ДЛЯ ХЕДЕРА
-var header_padding = 6;
-
-//ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --PADDING В CSS ЗНАЧЕНИЕ ПЕРЕМЕННОЙ header_padding
-document.querySelector('header').style.setProperty('--PADDING', header_padding + 'px');
-
 var max_header_coeff = 0.05;
-var MAX_HEADER_HEIGHT = max_header_coeff * Math.max(screen.width, screen.height);
+var header_pad_coeff = 0.06;
+var MAX_HEADER_HEIGHT;
+var HEADER_FONT_SIZE;
 var IMAGE_WIDTH;
-var HEADER_FONT_SIZE = MAX_HEADER_HEIGHT - header_padding * 2;
-document.querySelector('header').style.setProperty('--HEADER_FONT_SIZE', HEADER_FONT_SIZE + 'px');
 
-window.addEventListener("resize", RatioChange());
+function DefinePageParams() {
+    MAX_HEADER_HEIGHT = max_header_coeff * Math.max(screen.width, screen.height);
 
-function RatioChange() {
-	MAX_HEADER_HEIGHT = max_header_coeff * Math.max(screen.width, screen.height);
-    IMAGE_WIDTH = Math.min(NAV_WIDTH, MAX_HEADER_HEIGHT) - header_padding * 2;
-    document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', IMAGE_WIDTH + 'px');
-
+    header_padding = header_pad_coeff * MAX_HEADER_HEIGHT;
+    document.querySelector('header').style.setProperty('--PADDING', header_padding + 'px');
+    
     HEADER_FONT_SIZE = MAX_HEADER_HEIGHT - header_padding * 2;
-document.querySelector('header').style.setProperty('--HEADER_FONT_SIZE', HEADER_FONT_SIZE + 'px');
+    document.querySelector('header').style.setProperty('--HEADER_FONT_SIZE', HEADER_FONT_SIZE + 'px');
+
+    IMAGE_WIDTH = Math.min(NAV_WIDTH, MAX_HEADER_HEIGHT) - header_padding * 2;
+    document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', IMAGE_WIDTH + 'px');   
 }
+
+DefinePageParams();
+
+window.addEventListener("resize", DefinePageParams());
+
+
 //УСТАНАВИВАЕМ ПЕРЕМЕННУЮ ШИРИНЫ КАРТИНКИ ДЛЯ ХЕДЕРА
 
 //ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --IMAGE_WIDTH В CSS ЗНАЧЕНИЕ ПЕРЕМЕННОЙ IMAGE_WIDTH

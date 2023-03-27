@@ -50,7 +50,7 @@ header {
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        max-width: var(--NAV_WIDTH);
+        width: var(--NAV_WIDTH);
         
         border: 2px solid yellow;
         padding: var(--PADDING);
@@ -68,9 +68,10 @@ header {
         padding: var(--PADDING);
         padding-left: calc(var(--PADDING) + 4px);
         box-sizing: border-box;
-        border: 2px solid blue;
+        /*border: 2px solid blue;*/
         font-family: ransomblancozero;
         font-size: var(--HEADER_FONT_SIZE);
+        line-height: 1; /*ВАЖНО!*/
     }
 header *::selection {
 	color: black;
@@ -86,7 +87,8 @@ header *::selection {
     box-sizing: border-box;
     justify-content: flex-start;
     align-items: flex-start;
-
+    width: 100%;
+    margin-top: 10px;
 }
 
     /* NAVIGATION */
@@ -96,26 +98,28 @@ header *::selection {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: 10px;
-        max-width: 20%;
+        /*max-width: 20%;*/
         border: 2px solid red;
     }
     nav div {
         font-family: freeride;
         color: white;
         background-color: black;
+        box-sizing: border-box;
         padding: 4px;
+        max-width: 20%;
         margin-bottom: 4px;
         border: 2px solid purple;
         border-radius: 0px 5px 5px 0px;
         
     }
     nav div:first-child {
-        margin-bottom: 4px;
+        
         border-radius: 0px 10px 5px 0px;
     }
     nav div:last-child {
         border-radius: 0px 5px 10px 0px;
+        margin-bottom: 0px;
     }
     nav *::selection {
     	color: black;
@@ -131,9 +135,10 @@ header *::selection {
 
     section {
         width: 100%;
+        display: inline-flex;
         box-sizing: border-box;
         border: 2px solid black;
-        margin-top: 10px;
+        
     }
     section *::selection {
     	color: white;
