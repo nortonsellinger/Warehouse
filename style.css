@@ -61,12 +61,13 @@ header {
         }
     .headertitle {
         display: inline-flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         box-sizing: border-box;
         width: 100%;
-        padding: var(--PADDING);
-        padding-left: calc(var(--PADDING) + 4px);
+        --TITLE_PADDING;
+        padding: var(--TITLE_PADDING);
+        padding-left: calc(var(--TITLE_PADDING) + 4px);
         box-sizing: border-box;
         /*border: 2px solid blue;*/
         font-family: ransomblancozero;
