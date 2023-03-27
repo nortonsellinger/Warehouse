@@ -138,6 +138,8 @@ header *::selection {
         display: inline-flex;
         box-sizing: border-box;
         border: 2px solid black;
+        margin-left: 10px;
+        margin-right: 10px;
         
     }
     section *::selection {

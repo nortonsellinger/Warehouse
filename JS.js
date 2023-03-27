@@ -1,17 +1,10 @@
-//ПОЛУЧАЕМ ШИРИНУ ЭКРАНА
 const dvc_width = window.screen.width;
-//ПОЛУЧАЕМ ВЫСОТУ ЭКРАНА
 const dvc_height = window.screen.height;
-//ВЫЧИСЛЯЕМ ОТНОШЕНИЕ !ШИРИНЫ! К !ВЫСОТЕ!
 const dvc_ratio = dvc_width / dvc_height;
-//ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --DEVICE_RATIO В CSS ВЫЧИСЛЕННОЕ СООТНОШЕНИЕ СТОРОН УСТРОЙСТВА
 document.documentElement.style.setProperty('--DEVICE_RATIO', 'device_ratio');
 
 
 
-
-var NAV_WIDTH = document.getElementById('nav').offsetWidth;
-document.documentElement.style.setProperty('--NAV_WIDTH', NAV_WIDTH + 'px');
 
 var max_header_coeff = 0.05;
 var header_pad_coeff = 0.06;
@@ -19,6 +12,7 @@ var header_padding;
 var TITLE_PADDING;
 var MAX_HEADER_HEIGHT;
 var HEADER_FONT_SIZE;
+var NAV_WIDTH;
 var IMAGE_WIDTH;
 
 function DefinePageParams() {
@@ -33,6 +27,10 @@ function DefinePageParams() {
     HEADER_FONT_SIZE = MAX_HEADER_HEIGHT - TITLE_PADDING * 2;
     document.querySelector('header').style.setProperty('--HEADER_FONT_SIZE', HEADER_FONT_SIZE + 'px');
 
+    NAV_WIDTH = document.getElementById('nav').offsetWidth;
+    document.documentElement.style.setProperty('--NAV_WIDTH', NAV_WIDTH + 'px');
+    document.querySelector('.headerlogo').style.setProperty('width', NAV_WIDTH + 'px');
+
     IMAGE_WIDTH = Math.min(NAV_WIDTH, MAX_HEADER_HEIGHT) - header_padding * 2;
     document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', IMAGE_WIDTH + 'px');   
 }
@@ -40,8 +38,3 @@ function DefinePageParams() {
 DefinePageParams();
 
 window.addEventListener("resize", DefinePageParams());
-
-
-//УСТАНАВИВАЕМ ПЕРЕМЕННУЮ ШИРИНЫ КАРТИНКИ ДЛЯ ХЕДЕРА
-
-//ПРИСВАИВАЕМ ПЕРЕМЕННОЙ --IMAGE_WIDTH В CSS ЗНАЧЕНИЕ ПЕРЕМЕННОЙ IMAGE_WIDTH
