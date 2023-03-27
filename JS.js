@@ -17,7 +17,7 @@ document.querySelector('header').style.setProperty('--PADDING', HEADER_PADDING +
 var IMAGE_WIDTH;
 window.addEventListener("resize", RatioChange());
 function RatioChange() {
-    IMAGE_WIDTH = Math.min(NAV_WIDTH, 0.05 * Math.max(window.innerWidth, window.innerHeight)) - 
+    IMAGE_WIDTH = Math.min(NAV_WIDTH, 0.05 * Math.max(screen.width, screen.height)) - 
 HEADER_PADDING * 2;
     document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', IMAGE_WIDTH + 'px');
 }
