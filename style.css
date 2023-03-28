@@ -95,6 +95,7 @@ header *::selection {
     /* NAVIGATION */
 
     nav {
+        visibility: hidden;
         display: inline-flex;
         flex-direction: column;
         justify-content: flex-start;
