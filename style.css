@@ -140,7 +140,7 @@ header *::selection {
         border: 2px solid black;
         margin-left: 10px;
         margin-right: 10px;
-        box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.5) /*top right*/
+        box-shadow:  0px 0px 10px rgba(100, 100, 100, 0.9) /*top right*/
         /*0px 0px 0px 2px rgba(0, 0, 0, 0.5)*/;
     }
     section *::selection {
