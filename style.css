@@ -52,7 +52,7 @@ header {
         box-sizing: border-box;
         width: var(--NAV_WIDTH);
         
-        border: 2px solid yellow;
+        /*border: 2px solid yellow;*/
         padding: var(--PADDING);
     }
         .headerimg {
