@@ -29,10 +29,11 @@ function DefinePageParams() {
 
     NAV_WIDTH = document.getElementById('nav').offsetWidth;
     document.documentElement.style.setProperty('--NAV_WIDTH', NAV_WIDTH + 'px');
-    document.querySelector('.headerlogo').style.setProperty('width', NAV_WIDTH + 'px');
+    document.querySelector('.headerlogo').style.setProperty('height', MAX_HEADER_HEIGHT + 'px');
+    document.querySelector('.headerlogo').style.setProperty('width', MAX_HEADER_HEIGHT + 'px');
 
-    IMAGE_WIDTH = Math.min(NAV_WIDTH, MAX_HEADER_HEIGHT) - header_padding * 2;
-    document.querySelector('.headerimg').style.setProperty('--IMAGE_WIDTH', IMAGE_WIDTH + 'px');   
+    IMAGE_WIDTH = MAX_HEADER_HEIGHT - header_padding * 2;
+    document.querySelector('.headerimg').style.setProperty('width', IMAGE_WIDTH + 'px');   
 }
 
 DefinePageParams();

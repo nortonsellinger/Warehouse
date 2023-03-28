@@ -56,8 +56,8 @@ header {
         padding: var(--PADDING);
     }
         .headerimg {
-            --IMAGE_WIDTH;
-            width: var(--IMAGE_WIDTH);
+            /*--IMAGE_WIDTH;*/
+           
         }
     .headertitle {
         display: inline-flex;
