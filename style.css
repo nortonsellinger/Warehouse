@@ -67,7 +67,7 @@ header {
         width: 100%;
         --TITLE_PADDING;
         padding: var(--TITLE_PADDING);
-        padding-left: calc(var(--TITLE_PADDING) + 4px);
+        padding-left: calc(var(--TITLE_PADDING) * 1.2);
         box-sizing: border-box;
         /*border: 2px solid blue;*/
         font-family: ransomblancozero;
