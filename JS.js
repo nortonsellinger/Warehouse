@@ -38,7 +38,7 @@ function DefinePageParams() {
 
 DefinePageParams();
 
-window.addEventListener('resize', DefinePageParams());
+window.addEventListener('resize', DefinePageParams);
 
 /*function Nav_Visibility() {
     document.querySelector('nav').style.setProperty('visibility', 'visible');
