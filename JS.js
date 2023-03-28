@@ -44,7 +44,7 @@ window.addEventListener('resize', DefinePageParams);
     document.querySelector('nav').style.setProperty('visibility', 'visible');
 }
 document.querySelector('.headerimg').addEventListener('click', Nav_Visibility());*/
-
+/*
 var grad_colors = ['red', 'yellow', 'blue'];
 var grad_direct = '-45deg, ';
 var grad_space = 100 / grad_colors.length;
@@ -55,7 +55,7 @@ while (i <= grad_colors.length - 1) {
 }
 gradient = gradient.slice(0, -2);
 document.getElementById('gradient_anim').style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient ')');
-/*var gradient_anim;
+var gradient_anim;
 function GradientAnimation {
     let i = 0;
     while (i <= grad_colors.length - 1) {
