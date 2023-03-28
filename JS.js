@@ -40,7 +40,7 @@ DefinePageParams();
 
 window.addEventListener('resize', DefinePageParams());
 
-function Nav_Visibility() {
+/*function Nav_Visibility() {
     document.querySelector('nav').style.setProperty('visibility', 'visible');
 }
-document.querySelector('.headerimg').addEventListener('click', Nav_Visibility());
+document.querySelector('.headerimg').addEventListener('click', Nav_Visibility());*/
