@@ -6,9 +6,12 @@ var MAX_HEADER_HEIGHT;
 var HEADER_FONT_SIZE;
 var NAV_WIDTH;
 var IMAGE_WIDTH;
+var BASE_CONTENT_FONT_SIZE_COEFF = 0.012;
 
-function DefinePageParams() {
-    MAX_HEADER_HEIGHT = max_header_coeff * Math.max(screen.width, screen.height);
+var GreaterEdge = Math.max(screen.width, screen.height);
+
+function PageSetup() {
+    MAX_HEADER_HEIGHT = max_header_coeff * GreaterEdge;
 
     header_padding = header_pad_coeff * MAX_HEADER_HEIGHT;
     document.querySelector('header').style.setProperty('--PADDING', header_padding + 'px');
@@ -25,9 +28,11 @@ function DefinePageParams() {
     document.querySelector('.headerlogo').style.setProperty('width', MAX_HEADER_HEIGHT + 'px');
 
     IMAGE_WIDTH = MAX_HEADER_HEIGHT - header_padding * 2;
-    document.querySelector('.headerimg').style.setProperty('width', IMAGE_WIDTH + 'px');   
+    document.querySelector('.headerimg').style.setProperty('width', IMAGE_WIDTH + 'px');
+
+    document.getElementById('content').style.setProperty('font-size', BASE_CONTENT_FONT_SIZE_COEFF * GreaterEdge + 'px')
 }
 
-DefinePageParams();
+PageSetup();
 
-window.addEventListener('resize', DefinePageParams);
+window.addEventListener('resize', PageSetup);
