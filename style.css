@@ -4,6 +4,7 @@
 
     @font-face {
         font-family: ransomblancozero;
+        font-display: block;
         src: url('https://nortonsellinger.github.io/Warehouse/FONTS/RansomBlancoZero.otf');
         format('otf');
     }
