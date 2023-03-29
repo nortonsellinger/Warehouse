@@ -54,7 +54,7 @@ for (i = 0; i < grad_colors.length; i++) {
 }
 gradient = gradient.slice(0, -2);
 document.getElementById('gradient_anim').style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
-var gradient_anim;
+
 function GradientAnimation {
     for (i = 0; i < grad_colors.length; i++) {
         grad_colors.unshift(grad_colors.pop());
@@ -66,4 +66,4 @@ function GradientAnimation {
     gradient = gradient.slice(0, -2);
     document.getElementById('gradient_anim').style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
 }
-requestAnimationFrame(setInterval(GradientAnimation, 100));
+setInterval(GradientAnimation, 100);
