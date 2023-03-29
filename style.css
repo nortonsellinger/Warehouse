@@ -117,7 +117,7 @@ header *::selection {
         box-sizing: border-box;
         padding: 4px;
         margin-bottom: 4px;
-        border: 2px solid purple;
+        /*border: 2px solid purple;*/
         border-radius: 0px 5px 5px 0px;
         
     }

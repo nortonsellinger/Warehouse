@@ -1,10 +1,10 @@
 /*function Nav_Visibility() {
-    document.querySelector('nav').style.setProperty('visibility', 'visible');
+    document.querySelector('nav').style.setProperty('display', 'inline-flex');
 }
 document.querySelector('.headerimg').addEventListener('click', Nav_Visibility());*/
 
-var grad_colors = new Array("red", "yellow", "lime", "aqua", "blue");
-var grad_direct = '45deg, ';
+var grad_colors = new Array('red', 'orange', 'yellow', 'lime', 'aqua', 'blue', 'blueviolet');
+var grad_direct = '135deg, ';
 var grad_space = 100 / (grad_colors.length - 1);
 var gradient = '';
 for (i = 0; i < grad_colors.length; i++) {
@@ -24,5 +24,5 @@ function GradientAnimation () {
     document.querySelector('.gradient_anim').style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
 }
 
-gradient_anim = setInterval(GradientAnimation, 100);
+gradient_anim = requestAnimationFrame(setInterval(GradientAnimation, 150));
 /*clearInterval(gradient_anim);*/
