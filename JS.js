@@ -11,7 +11,8 @@ for (i = 0; i < grad_colors.length; i++) {
     gradient += grad_colors[i] + ' ' + grad_space * i + '%, ';
 }
 gradient = gradient.slice(0, -2);
-document.querySelector('.gradient_anim').style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
+var gradient_anim = document.querySelectorAll('.gradient_anim');
+gradient_anim.style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
 
 
 function GradientAnimation () {
@@ -21,7 +22,7 @@ function GradientAnimation () {
         gradient += grad_colors[i] + ' ' + grad_space * i + '%, ';
     }
     gradient = gradient.slice(0, -2);
-    document.querySelector('.gradient_anim').style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
+    gradient_anim.style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
 }
 
 requestAnimationFrame(setInterval(GradientAnimation, 150));
