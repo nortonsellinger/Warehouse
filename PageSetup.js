@@ -9,6 +9,7 @@ var IMAGE_WIDTH;
 var BASE_CONTENT_FONT_SIZE_COEFF = 0.012;
 
 var GreaterEdge = Math.max(screen.width, screen.height);
+var MinorEdge = Math.min(screen.width, screen.height);
 
 function PageSetup() {
     MAX_HEADER_HEIGHT = max_header_coeff * GreaterEdge;
@@ -30,7 +31,7 @@ function PageSetup() {
     IMAGE_WIDTH = MAX_HEADER_HEIGHT - header_padding * 2;
     document.querySelector('.headerimg').style.setProperty('width', IMAGE_WIDTH + 'px');
 
-    document.getElementById('content').style.setProperty('font-size', BASE_CONTENT_FONT_SIZE_COEFF * GreaterEdge + 'px');
+    document.getElementById('content').style.setProperty('font-size', BASE_CONTENT_FONT_SIZE_COEFF * (GreaterEdge + MinorEdge) / 2 + 'px');
 }
 
 PageSetup();
