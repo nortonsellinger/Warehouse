@@ -169,6 +169,7 @@ header *::selection {
 
 footer {
     flex: 0 0 auto;
+    margin-top: 10px;
     color: white;
     background-color: black;
     vertical-align: bottom;
