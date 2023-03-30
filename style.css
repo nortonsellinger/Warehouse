@@ -32,6 +32,9 @@
         width: 100%;
         margin: 0px;
         padding: 0px;
+        display: flex;
+	flex-direction: column;
+	min-height: 100%;
     }
 
 /* H-E-A-D-E-R */
@@ -93,6 +96,7 @@ header *::selection {
 #content {
     display: flex;
     flex-flow: row nowrap;
+    flex: 0 1 auto;
     box-sizing: border-box;
     justify-content: flex-start;
     align-items: flex-start;
@@ -161,6 +165,7 @@ header *::selection {
 /* F-O-O-T-E-R */
 
 footer {
+    flex: 0 0 auto;
     color: white;
     background-color: black;
     vertical-align: bottom;
