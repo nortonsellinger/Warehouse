@@ -160,6 +160,12 @@ header *::selection {
 
 /* F-O-O-T-E-R */
 
+footer {
+    color: white;
+    background-color: black;
+    font-family: ransomblancozero;
+    font-size: calc(var(--HEADER_FONT_SIZE) * 0.7);
+}
 footer *::selection {
 	color: black;
 	background-color: white;
