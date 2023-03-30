@@ -163,6 +163,8 @@ header *::selection {
 footer {
     color: white;
     background-color: black;
+    vertical-align: bottom;
+    text-align: center;
     font-family: ransomblancozero;
     font-size: calc(var(--HEADER_FONT_SIZE) * 0.7);
 }
