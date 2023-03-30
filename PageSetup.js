@@ -23,6 +23,7 @@ function PageSetup() {
     HEADER_FONT_SIZE = MAX_HEADER_HEIGHT - TITLE_PADDING * 2;
     document.querySelector('header').style.setProperty('--HEADER_FONT_SIZE', HEADER_FONT_SIZE + 'px');
 
+    document.querySelector('footer').style.setProperty('font-size', HEADER_FONT_SIZE * 0.7 + 'px');
     NAV_WIDTH = document.getElementById('nav').offsetWidth;
     document.documentElement.style.setProperty('--NAV_WIDTH', NAV_WIDTH + 'px');
     document.querySelector('.headerlogo').style.setProperty('height', MAX_HEADER_HEIGHT + 'px');
