@@ -31,7 +31,7 @@ function PageSetup() {
     IMAGE_WIDTH = MAX_HEADER_HEIGHT - header_padding * 2;
     document.querySelector('.headerimg').style.setProperty('width', IMAGE_WIDTH + 'px');
 
-    document.getElementById('content').style.setProperty('font-size', BASE_CONTENT_FONT_SIZE_COEFF * GreaterEdge + MinorEdge * 0.01 + 'px');
+    document.getElementById('content').style.setProperty('font-size', BASE_CONTENT_FONT_SIZE_COEFF * GreaterEdge + MinorEdge * 0.02 + 'px');
 }
 
 PageSetup();
