@@ -16,6 +16,7 @@ function PageSetup() {
 
     header_padding = header_pad_coeff * MAX_HEADER_HEIGHT;
     document.querySelector('header').style.setProperty('--PADDING', header_padding + 'px');
+    document.querySelector('footer').style.setProperty('padding', header_padding * 2 + 'px');
 
     TITLE_PADDING = header_padding * 2;
     document.querySelector('.headertitle').style.setProperty('--TITLE_PADDING', TITLE_PADDING + 'px');
@@ -24,6 +25,7 @@ function PageSetup() {
     document.querySelector('header').style.setProperty('--HEADER_FONT_SIZE', HEADER_FONT_SIZE + 'px');
 
     document.querySelector('footer').style.setProperty('font-size', HEADER_FONT_SIZE * 0.7 + 'px');
+
     NAV_WIDTH = document.getElementById('nav').offsetWidth;
     document.documentElement.style.setProperty('--NAV_WIDTH', NAV_WIDTH + 'px');
     document.querySelector('.headerlogo').style.setProperty('height', MAX_HEADER_HEIGHT + 'px');
