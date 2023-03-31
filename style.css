@@ -40,6 +40,13 @@
 	min-height: 100%;
     }
 
+.head_content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
 /* H-E-A-D-E-R */
 
 header {
@@ -167,7 +174,13 @@ header *::selection {
 
 
 /* F-O-O-T-E-R */
-
+.footer_wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    height: 100%;
+}
 footer {
     flex: 0 0 auto;
     margin-top: 10px;
