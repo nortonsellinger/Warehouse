@@ -16,7 +16,8 @@ const gradClass = document.querySelectorAll('.gradient_anim');
 gradClass.forEach(function (el) {
     el.style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
 });
-document.querySelector('.gradient_anim').style.setProperty('--BACKGROUND', 'linear-gradient' + '(' + grad_direct + gradient + ')');
+
+/*alert((0x64 + 0x50).toString(16));*/
 
 function GradientAnimation () {
     grad_colors.unshift(grad_colors.pop(grad_colors[grad_colors.length - 1]));
