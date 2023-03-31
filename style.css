@@ -45,6 +45,8 @@
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-content: flex-start;
+    box-sizing: border-box;
+    border: 2px solid blue;
 }
 
 /* H-E-A-D-E-R */
@@ -107,7 +109,6 @@ header *::selection {
 #content {
     display: flex;
     flex-flow: row nowrap;
-    flex: 0 1 auto;
     box-sizing: border-box;
     justify-content: flex-start;
     align-items: flex-start;
@@ -180,9 +181,10 @@ header *::selection {
     justify-content: flex-end;
     align-content: flex-start;
     height: 100%;
+    box-sizing: border-box;
+    border: 2px solid yellow;
 }
 footer {
-    flex: 0 0 auto;
     margin-top: 10px;
     color: white;
     background-color: black;
