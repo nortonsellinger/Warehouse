@@ -6,7 +6,7 @@ var MAX_HEADER_HEIGHT;
 var HEADER_FONT_SIZE;
 var NAV_WIDTH;
 var IMAGE_WIDTH;
-var BASE_CONTENT_FONT_SIZE_COEFF = 0.015;
+var BASE_CONTENT_FONT_SIZE_COEFF = 0.013;
 
 var GreaterEdge = Math.max(screen.width, screen.height);
 var MinorEdge = Math.min(screen.width, screen.height);
