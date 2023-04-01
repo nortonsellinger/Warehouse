@@ -2,30 +2,24 @@ var grad_colors = new Array('brown', 'yellow', 'lime', 'blue',);
 var grad_direct = '135deg, ';
 var grad_space = 100 / (grad_colors.length - 1);
 var gradient = '';
-for (i = 0; i < grad_colors.length; i++) {
-    gradient += grad_colors[i] + ' ' + grad_space * i + '%, ';
-}
-gradient = gradient.slice(0, -2);
-
+var GradientDuration = 500;
+var GradientSectionDuration = GradientDuration / (grad_colors.length - 1);
 const gradClass = document.querySelectorAll('.gradient_anim');
 gradClass.forEach(function (el) {
     el.style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
 });
 
-var GradientSpeed = 8; //пиксели в миллисекунду
-var GradientDuration = screen.width / GradientSpeed;
-var GradientSectionDuration = GradientDuration / (grad_colors.length - 1);
 function GradientAnimation () {
-    grad_colors.unshift(grad_colors.pop(grad_colors[grad_colors.length - 1]));
-    gradient = '';
     for (i = 0; i < grad_colors.length; i++) {
         gradient += grad_colors[i] + ' ' + grad_space * i + '%, ';
     }
     gradient = gradient.slice(0, -2);
     gradClass.forEach(function (el) {
     el.style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
-});
+    });
+    grad_colors.unshift(grad_colors.pop(grad_colors[grad_colors.length - 1]));
+    gradient = '';
 }
 
-requestAnimationFrame(setInterval(GradientAnimation, GradientDuration));
+requestAnimationFrame(setInterval(GradientAnimation, GradientSectionDuration));
 /*clearInterval(gradient_anim);*/
