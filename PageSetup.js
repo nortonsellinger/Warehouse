@@ -6,7 +6,7 @@ var MAX_HEADER_HEIGHT;
 var HEADER_FONT_SIZE;
 var NAV_WIDTH;
 var IMAGE_WIDTH;
-var smthForFontSize = screen.height * screen.width / ((screen.height + screen.width) / 2);
+var smthForFontSize = 1.4 * screen.height * screen.width / ((2 * screen.height + screen.width) / 2);
 var BASE_CONTENT_FONT_SIZE_COEFF = 0.020;
 
 var GreaterEdge = Math.max(screen.width, screen.height);
