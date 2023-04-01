@@ -12,7 +12,7 @@ gradClass.forEach(function (el) {
     el.style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
 });
 
-var GradientSpeed = 4; //пиксели в миллисекунду
+var GradientSpeed = 8; //пиксели в миллисекунду
 var GradientDuration = screen.width / GradientSpeed;
 var GradientSectionDuration = GradientDuration / (grad_colors.length - 1);
 function GradientAnimation () {
