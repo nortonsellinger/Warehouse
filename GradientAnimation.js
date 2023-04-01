@@ -1,8 +1,3 @@
-/*function Nav_Visibility() {
-    document.querySelector('nav').style.setProperty('display', 'inline-flex');
-}
-document.querySelector('.headerimg').addEventListener('click', Nav_Visibility());*/
-
 var grad_colors = new Array('red', 'orange', 'yellow', 'lime', 'aqua', 'blue', 'blueviolet');
 var grad_direct = '135deg, ';
 var grad_space = 100 / (grad_colors.length - 1);
@@ -16,8 +11,6 @@ const gradClass = document.querySelectorAll('.gradient_anim');
 gradClass.forEach(function (el) {
     el.style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
 });
-
-/*alert((0x64 + 0x50).toString(16));*/
 
 function GradientAnimation () {
     grad_colors.unshift(grad_colors.pop(grad_colors[grad_colors.length - 1]));
