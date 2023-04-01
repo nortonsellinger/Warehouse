@@ -2,8 +2,6 @@ var grad_colors = new Array('brown', 'yellow', 'lime', 'blue',);
 var grad_direct = '135deg, ';
 var grad_space = 100 / (grad_colors.length - 1);
 var gradient = '';
-var GradientDuration = 500;
-var GradientSectionDuration = GradientDuration / (grad_colors.length - 1);
 const gradClass = document.querySelectorAll('.gradient_anim');
 gradClass.forEach(function (el) {
     el.style.setProperty('background', 'linear-gradient' + '(' + grad_direct + gradient + ')');
@@ -21,5 +19,5 @@ function GradientAnimation () {
     gradient = '';
 }
 
-requestAnimationFrame(setInterval(GradientAnimation, GradientSectionDuration));
+requestAnimationFrame(setInterval(GradientAnimation, 150));
 /*clearInterval(gradient_anim);*/
