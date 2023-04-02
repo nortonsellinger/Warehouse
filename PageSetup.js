@@ -35,6 +35,7 @@ function PageSetup() {
     document.querySelector('.headerimg').style.setProperty('width', IMAGE_WIDTH + 'px');
 
     document.getElementById('content').style.setProperty('font-size', smthForFontSize + 'px');
+    document.querySelector('section').style.setProperty('padding', 0.02 * screen.width + 'px');
 }
 
 PageSetup();
