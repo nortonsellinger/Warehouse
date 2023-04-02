@@ -23,6 +23,11 @@
         src: url('https://nortonsellinger.github.io/Warehouse/FONTS/PFOnlineTwoPro.ttf');
         format('ttf');
     }
+    @font-face {
+        font-family: gvozdi;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Gvozdi.ttf');
+        format('ttf');
+    }
 
     /* VARIABLES */
 
@@ -47,6 +52,11 @@
 	flex-direction: column;
 	min-height: 100vh;
         border: 0px solid fuchsia;
+    }
+    p {
+        text-indent: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
 .head_content {
@@ -186,7 +196,7 @@ header *::selection {
         margin-right: 5px;
         padding: 5px;
         box-shadow:  0px 0px 5px rgba(100, 100, 100, 0.8), inset 0px 0px 5px rgba(100, 100, 100, 0.5);
-        font-family: pfonlinetwopro;
+        font-family: gvozdi;
     }
     section *::selection {
     	color: white;
