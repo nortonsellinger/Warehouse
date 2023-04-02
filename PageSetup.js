@@ -6,11 +6,10 @@ var MAX_HEADER_HEIGHT;
 var HEADER_FONT_SIZE;
 var NAV_WIDTH;
 var IMAGE_WIDTH;
-var smthForFontSize = screen.height * screen.width / ((screen.height + screen.width) / 2);
-var BASE_CONTENT_FONT_SIZE_COEFF = 0.020;
-
-var GreaterEdge = Math.max(screen.width, screen.height);
-var MinorEdge = Math.min(screen.width, screen.height);
+var GreaterEdge = Math.max(screen.height, screen.width);
+var MinorEdge = Math.min(screen.height, screen.width);
+var Ratio = GreaterEdge / MinorEdge;
+var smthForFontSize = (Ratio + (screen.width + screen.height) / 3) / 77;
 
 function PageSetup() {
     MAX_HEADER_HEIGHT = max_header_coeff * GreaterEdge;
@@ -35,7 +34,7 @@ function PageSetup() {
     IMAGE_WIDTH = MAX_HEADER_HEIGHT - header_padding * 2;
     document.querySelector('.headerimg').style.setProperty('width', IMAGE_WIDTH + 'px');
 
-    document.getElementById('content').style.setProperty('font-size', BASE_CONTENT_FONT_SIZE_COEFF * smthForFontSize + 'px');
+    document.getElementById('content').style.setProperty('font-size', smthForFontSize + 'px');
 }
 
 PageSetup();
