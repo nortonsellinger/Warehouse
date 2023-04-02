@@ -9,7 +9,7 @@ var IMAGE_WIDTH;
 var GreaterEdge = Math.max(screen.height, screen.width);
 var MinorEdge = Math.min(screen.height, screen.width);
 var Ratio = GreaterEdge / MinorEdge;
-var smthForFontSize = GreaterEdge * Ratio * 0.009;
+var smthForFontSize = GreaterEdge * Ratio * 0.008;
 
 function PageSetup() {
     MAX_HEADER_HEIGHT = max_header_coeff * GreaterEdge;
