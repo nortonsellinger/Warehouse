@@ -6,27 +6,34 @@
         font-family: ransomblancozero;
         font-display: block;
         src: url('https://nortonsellinger.github.io/Warehouse/FONTS/RansomBlancoZero.otf');
-        format('otf');
     }
     @font-face {
         font-family: crashalert;
         src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CrashAlert.ttf');
-        format('ttf');
     }
     @font-face{
         font-family: freeride;
         src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Freeride.otf');
-        format('otf');
     }
     @font-face {
         font-family: pfonlinetwopro;
         src: url('https://nortonsellinger.github.io/Warehouse/FONTS/PFOnlineTwoPro.ttf');
-        format('ttf');
     }
     @font-face {
         font-family: gvozdi;
         src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Gvozdi.ttf');
-        format('ttf');
+    }
+    @font-face {
+        font-family: acboucle;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/ACBoucle.ttf');
+    }
+    @font-face {
+        font-family: couriernew;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CourierNew.ttf');
+    }
+    @font-face {
+        font-family: cormorantlight;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CormorantLight.otf');
     }
 
     /* VARIABLES */
@@ -196,7 +203,7 @@ header *::selection {
         margin-right: 5px;
         padding: 5px;
         box-shadow:  0px 0px 5px rgba(100, 100, 100, 0.8), inset 0px 0px 5px rgba(100, 100, 100, 0.5);
-        font-family: gvozdi;
+        font-family: cormorantlight;
     }
     section *::selection {
     	color: white;
