@@ -204,6 +204,7 @@ header *::selection {
         padding: 5px;
         box-shadow:  0px 0px 5px rgba(100, 100, 100, 0.8), inset 0px 0px 5px rgba(100, 100, 100, 0.5);
         font-family: cormorantlight;
+        font-weight: bolder;
     }
     section *::selection {
     	color: white;
