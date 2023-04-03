@@ -19,5 +19,5 @@ function GradientAnimation () {
     gradient = '';
 }
 
-requestAnimationFrame(setInterval(GradientAnimation, 150));
+requestAnimationFrame(setInterval(GradientAnimation)), 150);
 /*clearInterval(gradient_anim);*/
