@@ -6,12 +6,15 @@ var MAX_HEADER_HEIGHT;
 var HEADER_FONT_SIZE;
 var NAV_WIDTH;
 var IMAGE_WIDTH;
-var GreaterEdge = Math.max(screen.height, screen.width);
-var MinorEdge = Math.min(screen.height, screen.width);
-var Ratio = GreaterEdge / MinorEdge;
-var smthForFontSize = GreaterEdge * Ratio * 0.008;
-alert(screen.width);
-/*function PageSetup() {*/
+var GreaterEdge;
+var MinorEdge;
+var Ratio;
+var smthForFontSize;
+function PageSetup() {
+    GreaterEdge = Math.max(screen.height, screen.width);
+    MinorEdge = Math.min(screen.height, screen.width);
+    Ratio = GreaterEdge / MinorEdge;
+    smthForFontSize = GreaterEdge * Ratio * 0.008;
     MAX_HEADER_HEIGHT = max_header_coeff * GreaterEdge;
 
     header_padding = header_pad_coeff * MAX_HEADER_HEIGHT;
@@ -36,8 +39,8 @@ alert(screen.width);
 
     document.getElementById('content').style.setProperty('font-size', smthForFontSize + 'px');
     document.querySelector('section').style.setProperty('padding', 0.02 * screen.width + 'px');
-/*}
+}
 
 PageSetup();
 
-screen.addEventListener('resize', PageSetup);*/
+window.addEventListener('resize', PageSetup);*/
