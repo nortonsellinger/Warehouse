@@ -11,7 +11,7 @@ var MinorEdge = Math.min(screen.height, screen.width);
 var Ratio = GreaterEdge / MinorEdge;
 var smthForFontSize = GreaterEdge * Ratio * 0.008;
 
-function PageSetup() {
+/*function PageSetup() {*/
     MAX_HEADER_HEIGHT = max_header_coeff * GreaterEdge;
 
     header_padding = header_pad_coeff * MAX_HEADER_HEIGHT;
@@ -36,8 +36,8 @@ function PageSetup() {
 
     document.getElementById('content').style.setProperty('font-size', smthForFontSize + 'px');
     document.querySelector('section').style.setProperty('padding', 0.02 * screen.width + 'px');
-}
+/*}
 
 PageSetup();
 
-screen.addEventListener('resize', PageSetup);
+screen.addEventListener('resize', PageSetup);*/
