@@ -43,4 +43,4 @@ function PageSetup() {
 
 PageSetup();
 
-window.addEventListener('resize', PageSetup);*/
+window.addEventListener('resize', PageSetup);
