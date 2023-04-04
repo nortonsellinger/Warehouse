@@ -9,6 +9,9 @@ var LogoWidth = MaxHeaderHeight - HeaderPadding * 2;
 var TitlePadding = HeaderPadding * 2;
 var HeaderFontSize = MaxHeaderHeight - TitlePadding * 2;
 
+var SectionPaddingVer = 0.02 * MinorEdge;
+var SectionPaddingHor = 0.02 * GreaterEdge;
+
 document.querySelector('footer').style.setProperty('padding', HeaderPadding * 2 + 'px'); 
 document.querySelector('.headertitle').style.setProperty('padding', TitlePadding + 'px');
 document.querySelector('.headertitle').style.setProperty('padding-left', TitlePadding * 1.2 + 'px');
@@ -28,5 +31,5 @@ PageSetup();
 
 /*window.addEventListener('resize', PageSetup, true);*/
 window.addEventListener("orientationchange", function() {
-  document.querySelector('section').style.setProperty('padding', 0.02 * screen.width + 'px');
+    document.querySelector('section').style.setProperty('padding', 0.02 * screen.width + 'px');
 }, false);
