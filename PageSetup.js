@@ -4,8 +4,8 @@ const Ratio = GreaterEdge / MinorEdge;
 
 var MaxHeaderHeight = 0.05 * GreaterEdge;
 var BaseContentFontSize = GreaterEdge * Ratio * 0.008;
-var LogoWidth = MaxHeaderHeight - HeaderPadding * 2;
 var HeaderPadding = 0.06 * MaxHeaderHeight;
+var LogoWidth = MaxHeaderHeight - HeaderPadding * 2;
 var TitlePadding = HeaderPadding * 2;
 var HeaderFontSize = MaxHeaderHeight - TitlePadding * 2;
 
