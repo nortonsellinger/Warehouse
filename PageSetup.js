@@ -26,7 +26,8 @@ function PageSetup() {
 
 PageSetup();
 
-window.addEventListener('resize', PageSetup, true);
+/*window.addEventListener('resize', PageSetup, true);*/
 window.addEventListener("orientationchange", function() {
   alert(window.orientation);
+  document.querySelector('section').style.setProperty('padding', 0.02 * screen.width + 'px');
 }, false);
