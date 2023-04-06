@@ -18,6 +18,8 @@ function GradientAnimation () {
     grad_colors.unshift(grad_colors.pop(grad_colors[grad_colors.length - 1]));
     gradient = '';
 }
-
-requestAnimationFrame(setInterval(GradientAnimation)), 150);
+function setGradientAnimation () {
+    setInterval(GradientAnimation, 150);
+}
+requestAnimationFrame(setGradientAnimation);
 /*clearInterval(gradient_anim);*/
