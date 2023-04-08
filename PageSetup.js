@@ -22,6 +22,7 @@ document.querySelector('.headerlogo').style.width = MaxHeaderHeight + 'px';
 document.querySelector('.headerlogo').style.padding = HeaderPadding + 'px';
 document.querySelector('.headerimg').style.width = LogoWidth + 'px';
 document.getElementById('content').style.fontSize = BaseContentFontSize + 'px';
+document.querySelector('nav').style.fontSize = BaseContentFontSize * 1.2 + 'px';
 
 function PageSetup() {
     document.querySelector('section').style.padding = 0.02 * screen.width + 'px';
