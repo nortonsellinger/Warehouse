@@ -1,76 +1,3 @@
-/* O-V-E-R-A-L-L */
-
-    /* FONTS */
-
-    @font-face {
-        font-family: ransomblancozero;
-        font-display: block;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/RansomBlancoZero.otf');
-    }
-    @font-face {
-        font-family: crashalert;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CrashAlert.ttf');
-    }
-    @font-face{
-        font-family: freeride;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Freeride.otf');
-    }
-    @font-face {
-        font-family: pfonlinetwopro;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/PFOnlineTwoPro.ttf');
-    }
-    @font-face {
-        font-family: gvozdi;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Gvozdi.ttf');
-    }
-    @font-face {
-        font-family: acboucle;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/ACBoucle.ttf');
-    }
-    @font-face {
-        font-family: couriernew;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CourierNew.ttf');
-    }
-    @font-face {
-        font-family: cormorantlight;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CormorantLight.otf');
-    }
-    @font-face {
-        font-family: banderaprolight;
-        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/BanderaProLight.otf');
-    }
-
-    /* VARIABLES */
-
-    :root {
-        /* COMMON */
-    	
-    }
-
-    /* SELECTORS */
-    * {
-        box-sizing: border-box;
-    }
-    html {
-        height: 100%;
-    }
-    body {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-        border: 0px solid fuchsia;
-    }
-    p {
-        text-indent: 30px;
-        margin-top: 5px;
-        margin-bottom: 0px;
-    }
-
-/* H-E-A-D-E-R */
-
 header {
     display: flex;
     flex-flow: row nowrap;
@@ -216,7 +143,15 @@ header *::selection {
     section img {
         border: 1px solid black;
         box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.6);
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px;
         max-height: ;
+    }
+    p {
+        text-indent: 30px;
+        margin-top: 5px;
+        margin-bottom: 0px;
     }
     section *::selection {
     	color: white;

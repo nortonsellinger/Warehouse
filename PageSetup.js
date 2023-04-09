@@ -9,8 +9,14 @@ var LogoWidth = MaxHeaderHeight - HeaderPadding * 2;
 var TitlePadding = HeaderPadding * 2;
 var HeaderFontSize = MaxHeaderHeight - TitlePadding * 2;
 
-var SectionPaddingVer = 0.02 * MinorEdge;
-var SectionPaddingHor = 0.02 * GreaterEdge;
+var ContentImgHeight = 0.25 * screen.height;
+var contentImgs = document.querySelectorAll('section img');
+contentImgs.forEach (
+	function (img) {
+		img.style.height = ContentImgHeight + 'px';
+	}
+)
+
 
 document.querySelector('footer').style.padding = HeaderPadding * 2 + 'px'; 
 document.querySelector('.headertitle').style.padding = TitlePadding + 'px';
