@@ -225,6 +225,7 @@ header *::selection {
     section img {
         border: 1px solid black;
         box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.6);
+        max-height: ;
     }
     section *::selection {
     	color: white;
