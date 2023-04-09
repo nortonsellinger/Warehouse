@@ -33,4 +33,4 @@ PageSetup();
 /*window.addEventListener('resize', PageSetup, true);*/
 window.addEventListener("orientationchange", function() {
     document.querySelector('section').style.padding = 0.02 * screen.width + 'px';
-}, false);
+}, {caption: true, once: false, passive: false});
