@@ -1,0 +1,37 @@
+    @font-face {
+        font-family: ransomblancozero;
+        font-display: block;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/RansomBlancoZero.otf');
+    }
+    @font-face {
+        font-family: crashalert;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CrashAlert.ttf');
+    }
+    @font-face{
+        font-family: freeride;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Freeride.otf');
+    }
+    @font-face {
+        font-family: pfonlinetwopro;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/PFOnlineTwoPro.ttf');
+    }
+    @font-face {
+        font-family: gvozdi;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Gvozdi.ttf');
+    }
+    @font-face {
+        font-family: acboucle;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/ACBoucle.ttf');
+    }
+    @font-face {
+        font-family: couriernew;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CourierNew.ttf');
+    }
+    @font-face {
+        font-family: cormorantlight;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/CormorantLight.otf');
+    }
+    @font-face {
+        font-family: banderaprolight;
+        src: url('https://nortonsellinger.github.io/Warehouse/FONTS/BanderaProLight.otf');
+    }
