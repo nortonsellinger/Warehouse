@@ -32,4 +32,4 @@ PageSetup();
 
 /*window.addEventListener('resize', PageSetup, true);*/
 window.addEventListener("orientationchange", PageSetup, {caption: true, once: false, passive: false});
-document.querySelector('section').addEventListener("orientationchange", PageSetup, {caption: false, once: false, passive: false});
+
