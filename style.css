@@ -210,7 +210,8 @@ header *::selection {
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-content: flex-start;
-        position: fixed;
+        position: sticky;
+        top: 20px;
         box-sizing: border-box;
         border: 2px solid black;
         margin-left: 5px;
