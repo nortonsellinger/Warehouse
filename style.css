@@ -69,15 +69,6 @@
         margin-bottom: 0px;
     }
 
-.head_content {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    box-sizing: border-box;
-    border: 0px solid blue;
-}
-
 /* H-E-A-D-E-R */
 
 header {
