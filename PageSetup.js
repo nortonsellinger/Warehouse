@@ -31,6 +31,5 @@ function PageSetup() {
 PageSetup();
 
 /*window.addEventListener('resize', PageSetup, true);*/
-window.addEventListener("orientationchange", function() {
-    document.querySelector('section').style.padding = 0.02 * screen.width + 'px';
-}, {caption: true, once: false, passive: false});
+window.addEventListener("orientationchange", PageSetup, {caption: true, once: false, passive: false});
+document.querySelector('section').addEventListener("orientationchange", PageSetup, {caption: false, once: false, passive: false});
