@@ -9,11 +9,19 @@ var LogoWidth = MaxHeaderHeight - HeaderPadding * 2;
 var TitlePadding = HeaderPadding * 2;
 var HeaderFontSize = MaxHeaderHeight - TitlePadding * 2;
 
-var ContentImgHeight = 0.25 * screen.height;
+var ContentImgMaxHeight = 0.25 * screen.height;
 var contentImgs = document.querySelectorAll('section img');
 contentImgs.forEach (
 	function (img) {
-		img.style.height = ContentImgHeight + 'px';
+		img.style.width = '100%';
+		if (img.offsetHeight > ContentImgMaxHeight) {
+			img.style.height = ContentImgMaxHeight + 'px';
+			img.style.width = 'auto';
+			/*img.style.display = 'table';
+			img.style.margin = '5px auto 10px auto';*/
+		}
+		
+		/*img.style.height = ContentImgMaxHeight + 'px';*/
 	}
 )
 
