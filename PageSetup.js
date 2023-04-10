@@ -10,7 +10,7 @@ var TitlePadding = HeaderPadding * 2;
 var HeaderFontSize = MaxHeaderHeight - TitlePadding * 2;
 
 var ContentImgMaxHeight = 0.25 * screen.height;
-var contentImgs = document.querySelectorAll('section img');
+var contentImgs = document.querySelectorAll('.content_img img');
 contentImgs.forEach (
 	function (img) {
 		img.style.width = '100%';
@@ -36,13 +36,13 @@ function PageSetup() {
     document.querySelector('section').style.padding = 0.02 * screen.width + 'px';
 
     var ContentImgMaxHeight = 0.25 * screen.height;
-	var contentImgs = document.querySelectorAll('section img');
+	var contentImgs = document.querySelectorAll('.content_img img');
 	contentImgs.forEach (
 	function (img) {
-		img.style.width = '100%';
-			if (img.offsetHeight > ContentImgMaxHeight) {
-				img.style.height = ContentImgMaxHeight + 'px';
-				img.style.width = 'auto';
+		img.style.width = img.closest('.content_img').width;
+		if (img.offsetHeight > ContentImgMaxHeight) {
+			img.style.height = ContentImgMaxHeight + 'px';
+			img.style.width = '';
 		}
 	})
 }
