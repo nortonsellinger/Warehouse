@@ -13,18 +13,8 @@ var ContentImgMaxHeight = 0.25 * screen.height;
 var contentImgs = document.querySelectorAll('section img');
 contentImgs.forEach (
 	function (img) {
-		img.style.width = '100%';
-		if (img.offsetHeight > ContentImgMaxHeight) {
 			img.style.height = ContentImgMaxHeight + 'px';
-			img.style.width = 'auto';
-			/*img.style.display = 'table';
-			img.style.margin = '5px auto 10px auto';*/
-		}
-		
-		/*img.style.height = ContentImgMaxHeight + 'px';*/
-	}
-)
-
+			img.style.width = 'auto';})
 
 document.querySelector('footer').style.padding = HeaderPadding * 2 + 'px'; 
 document.querySelector('.headertitle').style.padding = TitlePadding + 'px';
@@ -40,6 +30,13 @@ document.querySelector('nav').style.fontSize = BaseContentFontSize * 1.2 + 'px';
 
 function PageSetup() {
     document.querySelector('section').style.padding = 0.02 * screen.width + 'px';
+
+    var ContentImgMaxHeight = 0.25 * screen.height;
+	var contentImgs = document.querySelectorAll('section img');
+	contentImgs.forEach (
+		function (img) {
+				img.style.height = ContentImgMaxHeight + 'px';
+				img.style.width = 'auto';})
 }
 
 PageSetup();
