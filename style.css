@@ -60,7 +60,7 @@ header *::selection {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    box-sizing: none;
+    box-sizing: content-box;
     margin-top: 10px;
 }
 
@@ -125,7 +125,7 @@ header *::selection {
         flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: center;
-        box-sizing: none;
+        box-sizing: content-box;
         border: 2px solid black;
         margin-left: 5px;
         margin-right: 5px;
@@ -148,7 +148,7 @@ header *::selection {
         align-items: flex-end;
         gap: 5px;
         width: 100%;
-        box-sizing: none;
+        box-sizing: content-box;
         margin-bottom: 5px;
     }
     p {
