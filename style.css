@@ -145,6 +145,7 @@ header *::selection {
         flex-flow: row wrap;
         justify-content: center;
         align-items: flex-end;
+        width: 100%;
     }
     section img:first-of-type {
         margin-top: 0px;
