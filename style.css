@@ -142,6 +142,11 @@ header *::selection {
         margin: 5px auto 5px auto;
         max-height: ;
     }
+    .content_img {
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-around;
+    }
     section img:first-of-type {
         margin-top: 0px;
     }
