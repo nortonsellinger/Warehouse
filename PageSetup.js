@@ -29,6 +29,10 @@ document.querySelector('.headerlogo').style.height = MaxHeaderHeight + 'px';
 document.querySelector('.headerlogo').style.width = MaxHeaderHeight + 'px';
 document.querySelector('.headerlogo').style.padding = HeaderPadding + 'px';
 document.querySelector('.headerimg').style.width = LogoWidth + 'px';
+
+if (BaseContentFontSize > 20) {
+    BaseContentFontSize = 20;
+}
 document.getElementById('content').style.fontSize = BaseContentFontSize + 'px';
 document.querySelector('nav').style.fontSize = BaseContentFontSize * 1.2 + 'px';
 
