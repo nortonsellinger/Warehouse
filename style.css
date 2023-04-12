@@ -55,7 +55,7 @@ header *::selection {
 /* C-O-N-T-E-N-T */
 
 #content {
-    display: flex;
+    display: inline-flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
@@ -136,11 +136,10 @@ header *::selection {
     section img {
         border: 1px solid black;
         box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.6);
-        margin: 0px 0 0px 0px;
         max-height: ;
     }
     .content_img {
-        display: flex;
+        display: inline-flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: flex-end;

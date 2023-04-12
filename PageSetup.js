@@ -9,7 +9,7 @@ var LogoWidth = MaxHeaderHeight - HeaderPadding * 2;
 var TitlePadding = HeaderPadding * 2;
 var HeaderFontSize = MaxHeaderHeight - TitlePadding * 2;
 
-var ContentImgMaxHeight = 0.25 * screen.height;
+/*var ContentImgMaxHeight = 0.25 * screen.height;
 var contentImgs = document.querySelectorAll('.content_img img');
 contentImgs.forEach (
 	function (img) {
@@ -17,8 +17,9 @@ contentImgs.forEach (
 			if (img.offsetHeight > ContentImgMaxHeight) {
 				img.style.height = ContentImgMaxHeight + 'px';
 				img.style.width = 'auto';
+
 		}
-	})
+	})*/
 
 document.querySelector('footer').style.padding = HeaderPadding * 2 + 'px'; 
 document.querySelector('.headertitle').style.padding = TitlePadding + 'px';
@@ -46,9 +47,9 @@ function PageSetup() {
 		img.style.width = img.closest('.content_img').width;
 		if (img.offsetHeight > ContentImgMaxHeight) {
 			img.style.height = ContentImgMaxHeight + 'px';
-			img.style.width = '';
+			img.style.width = 'auto';
 		}
-	})
+	}) 
 }
 
 PageSetup();
