@@ -55,7 +55,7 @@ header *::selection {
 /* C-O-N-T-E-N-T */
 
 #content {
-    display: inline-flex;
+    display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
