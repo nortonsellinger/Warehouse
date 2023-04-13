@@ -1,0 +1,23 @@
+.footer_wrap {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    height: 100%;
+    border: 0px solid yellow;
+}
+footer {
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    vertical-align: bottom;
+    text-align: center;
+    padding: ;
+    font-family: ransomblancozero;
+    font-size:;
+}
+footer::selection {
+	color: black;
+	background-color: white;
+}

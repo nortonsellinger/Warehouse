@@ -1,0 +1,48 @@
+nav {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: sticky;
+    top: 50vh;
+    width: 10%;
+    /*border: 2px solid black;
+    box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.8), inset 0px 0px 5px rgba(100, 100, 100, 0.5);*/
+}
+nav div {
+    width: 100%;
+    font-family: freeride;
+    overflow-wrap: normal;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    margin-bottom: 4px;
+    /*border: 2px solid purple;*/
+    border-radius: 0px 5px 5px 0px;
+  
+    }
+nav div:first-child {
+  
+    border-radius: 0px 10px 5px 0px;
+}
+nav div:last-child {
+    border-radius: 0px 5px 10px 0px;
+    margin-bottom: 0px;
+}
+nav *::selection {
+    color: black;
+    background-color: white;
+    text-shadow: 0px 0px 4px black;
+}
+nav div:hover {
+    background-color: #353535;
+    color: white;
+    text-shadow: 0px 0px 4px white;
+}
+nav img {
+    filter: drop-shadow(0px 0px 5px black)
+        /*drop-shadow(1px 1px 0 red) 
+        drop-shadow(-1px -1px 0 red)
+        drop-shadow(-1px 1px 0 red)
+        drop-shadow(1px -1px 0 red)*/;
+}
