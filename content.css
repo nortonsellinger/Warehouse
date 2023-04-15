@@ -68,6 +68,7 @@ section *::selection {
     /*background-color: peachpuff;*/
 }
 .titletext {
+    width: 100%;
     min-width: 47vw;
     border: 2px solid black;
     padding-top: 5px;
