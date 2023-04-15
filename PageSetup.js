@@ -21,6 +21,8 @@ contentImgs.forEach (
 		}
 	})
 
+document.querySelector('.title').style.fontSize = BaseContentFontSize * 1.4 + 'px';
+
 document.querySelector('footer').style.padding = HeaderPadding * 2 + 'px'; 
 document.querySelector('.headertitle').style.padding = TitlePadding + 'px';
 document.querySelector('.headertitle').style.paddingLeft = TitlePadding * 1.2 + 'px';
@@ -39,7 +41,7 @@ document.querySelector('nav').style.fontSize = BaseContentFontSize * 1.2 + 'px';
 
 function PageSetup() {
     document.querySelector('section').style.padding = 0.02 * screen.width + 'px';
-
+    document.querySelector('section').style.paddingTop = 10 + 'px';
     /*var ContentImgMaxHeight = 0.25 * screen.height;
 	var contentImgs = document.querySelectorAll('.content_img img');
 	contentImgs.forEach (

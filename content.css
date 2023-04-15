@@ -18,6 +18,7 @@ section {
     margin-left: 5px;
     margin-right: 5px;
     padding:;
+    padding-top: 5px;
     /*box-sizing: content-box;*/
     box-shadow:  0px 0px 5px rgba(100, 100, 100, 0.8), inset 0px 0px 5px rgba(100, 100, 100, 0.5);
     font-family: banderaprolight;
@@ -32,9 +33,10 @@ section {
     gap: 5px;
     width: 100%;
     margin-top: 5px;
-    
+    margin-bottom: 5px;
     /*box-sizing: content-box;*/
 }
+
 section img {
     border: 1px solid black;
     box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.6);
@@ -42,10 +44,10 @@ section img {
 p {
     text-indent: 30px;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
-p:first-of-type {
-    margin-top: 0px;
+p:last-of-type {
+    margin-bottom: 0px;
 }
 section *::selection {
     color: white;
@@ -53,4 +55,26 @@ section *::selection {
 }
 #block1 {
     width: 100%;
+}
+.title {
+    font-family: foglihten;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /*background-color: peachpuff;*/
+}
+.titletext {
+    min-width: 47vw;
+    border: 2.5px solid black;
+    padding-top: 3px;
+}
+.title_side {
+    height: 4px;
+    background-color: black;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
