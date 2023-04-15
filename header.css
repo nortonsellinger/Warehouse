@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+    .headerlogo {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width:;
+        padding: ;
+    }
+        .headerimg {     
+        }
+    .headertitle {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        padding: ;
+        padding-left:;
+        /*border: 2px solid blue;*/
+        font-family: ransomblancozero;
+        font-size: ;
+        line-height: 1; /*ВАЖНО!*/
+    }
+header *::selection {
+	color: black;
+	background-color: white;
+}
