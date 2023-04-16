@@ -21,7 +21,13 @@ contentImgs.forEach (
 		}
 	})
 
-document.querySelector('.title').style.fontSize = BaseContentFontSize * 1.4 + 'px';
+document.querySelector('.title').style.fontSize = BaseContentFontSize * 1.3+ 'px';
+/*var titleSides = document.querySelectorAll('.title_side');
+titleSides.forEach (
+	function(side) {
+		side.style.fontSize = side.offsetHeight + 'px';
+	}
+)*/
 
 document.querySelector('footer').style.padding = HeaderPadding * 2 + 'px'; 
 document.querySelector('.headertitle').style.padding = TitlePadding + 'px';

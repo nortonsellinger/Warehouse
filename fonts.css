@@ -64,7 +64,7 @@
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/OldTimer.ttf');
 }
 @font-face {
-    font-family: komi; /*not working*/
+    font-family: komi; /*caps, thin, figure, hardreadable*/
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Komi.ttf');
 }
 @font-face {
@@ -96,6 +96,7 @@
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Spectral.ttf');
 }
 @font-face {
+    /*middle, semi-wide, thin, cursive, handwritten*/
     font-family: zingrust;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/ZingRust.ttf');
 }
@@ -108,14 +109,17 @@
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Piazzolla.ttf');
 }
 @font-face {
+    /*small, semi-wide, thin, cursive, handwritten*/
     font-family: leohand;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/LeoHand.ttf');
 }
 @font-face {
+    /*bold, wide, caps*/
     font-family: amagro;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Amagro.ttf');
 }
 @font-face {
+    /*small, semi-wide, thin, cursive, handwritten*/
     font-family: nickainley;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Nickainley.ttf');
 }
@@ -128,10 +132,12 @@
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/SafronModern.ttf');
 }
 @font-face {
+    /*small, semi-wide, thin, grotesk*/
     font-family: occidental;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Occidental.ttf');
 }
 @font-face {
+    /*small, semi-wide, thin, handwitten*/
     font-family: yahfie;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Yahfie.ttf');
 }
@@ -148,7 +154,8 @@
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Balkan.ttf');
 }
 @font-face {
-    font-family: bureauap;
+    /*big, semi-wide, thin, caps, creasy*/
+    font-family: bureau;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/BureauAP.ttf');
 }
 @font-face {
@@ -156,6 +163,7 @@
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Optimus.ttf');
 }
 @font-face {
+    /*small, semi-narrow, thin, crooked*/
     font-family: tedescalamont;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/TedescaLamont.ttf');
 }
@@ -168,11 +176,13 @@
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/MonUniversity.ttf');
 }
 @font-face {
-    font-family: charlotte; /*caps, thin*/
+    /*big, wide, caps, thin*/
+    font-family: charlotte;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Charlotte.ttf');
 }
 @font-face {
-    font-family: gasrux; /*caps, thin, crooked*/
+    /*caps, thin, crooked*/
+    font-family: gasrux;
     src: url('https://nortonsellinger.github.io/Warehouse/FONTS/Gasrux.ttf');
 }
 @font-face {
