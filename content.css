@@ -58,7 +58,7 @@ p:last-of-type {
 }
 section *::selection {
     color: white;
-    background-color: black;
+    background-color: #404040;
 }
 #block1 {
     width: 100%;
