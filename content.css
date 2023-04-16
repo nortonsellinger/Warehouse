@@ -57,8 +57,8 @@ section *::selection {
     width: 100%;
 }
 .title {
-    font-family: foglihten;
-    text-align: center;
+    font-family: zaychik;
+    text-align: left;
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -70,11 +70,11 @@ section *::selection {
 .titletext {
     width: 100%;
     min-width: 47vw;
-    border: 2px solid black;
+    border: 0px solid black;
     padding-top: 5px;
     padding-left: 4px;
     padding-right: 4px;
-    box-shadow: 0px 0px 7px rgba(100, 100, 100, 0.4);
+    text-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
     /*background: linear-gradient(90deg, dimgray, white, dimgray);
     color: black;*/
 }
