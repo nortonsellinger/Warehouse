@@ -11,15 +11,7 @@ var HeaderFontSize = MaxHeaderHeight - TitlePadding * 2;
 
 var ContentImgMaxHeight = 0.25 * screen.height;
 /*var contentImgs = document.querySelectorAll('.content_img img');
-contentImgs.forEach (
-	function (img) {
-		img.style.width = '100%';
-			if (img.offsetHeight > ContentImgMaxHeight) {
-				img.style.height = ContentImgMaxHeight + 'px';
-				img.style.width = 'auto';
 
-		}
-	})
 */
 document.querySelector('.title').style.fontSize = BaseContentFontSize * 1.3+ 'px';
 /*var titleSides = document.querySelectorAll('.title_side');
@@ -45,19 +37,21 @@ if (BaseContentFontSize > 20) {
 document.querySelector('section').style.fontSize = BaseContentFontSize + 'px';
 document.querySelector('nav').style.fontSize = BaseContentFontSize * 1.2 + 'px';
 
+ContentImgMaxHeight = 0.25 * screen.height;
+var contentImgs = document.querySelectorAll('.content_img img');
+
 function PageSetup() {
     document.querySelector('section').style.padding = 0.02 * screen.width + 'px';
     document.querySelector('section').style.paddingTop = 10 + 'px';
-    /*var ContentImgMaxHeight = 0.25 * screen.height;
-	var contentImgs = document.querySelectorAll('.content_img img');
 	contentImgs.forEach (
 	function (img) {
-		img.style.width = img.closest('.content_img').width;
-		if (img.offsetHeight > ContentImgMaxHeight) {
-			img.style.height = ContentImgMaxHeight + 'px';
-			img.style.width = 'auto';
+		img.style.width = '100%';
+			if (img.offsetHeight > ContentImgMaxHeight) {
+				img.style.height = ContentImgMaxHeight + 'px';
+				img.style.width = 'auto';
+
 		}
-	}) */
+	})
 }
 
 PageSetup();
