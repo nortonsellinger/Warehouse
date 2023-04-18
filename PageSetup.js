@@ -10,7 +10,7 @@ var TitlePadding = HeaderPadding * 2;
 var HeaderFontSize = MaxHeaderHeight - TitlePadding * 2;
 
 var ContentImgMaxHeight = 0.25 * screen.height;
-var contentImgs = document.querySelectorAll('.content_img img');
+/*var contentImgs = document.querySelectorAll('.content_img img');
 contentImgs.forEach (
 	function (img) {
 		img.style.width = '100%';
@@ -20,7 +20,7 @@ contentImgs.forEach (
 
 		}
 	})
-
+*/
 document.querySelector('.title').style.fontSize = BaseContentFontSize * 1.3+ 'px';
 /*var titleSides = document.querySelectorAll('.title_side');
 titleSides.forEach (
