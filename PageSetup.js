@@ -43,7 +43,7 @@ var contentImgs = document.querySelectorAll('.content_img img');
 function PageSetup() {
     document.querySelector('section').style.padding = 0.02 * screen.width + 'px';
     document.querySelector('section').style.paddingTop = 10 + 'px';
-    
+
 	contentImgs.forEach (
 	function (img) {
 		img.style.width = '100%';
