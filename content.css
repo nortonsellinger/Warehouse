@@ -25,7 +25,7 @@ section {
     font-weight: bold;
     text-align: justify;
 }
-.content_img {
+.content_img_bg {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -39,11 +39,20 @@ section {
     padding-top: 2px;
     padding-bottom: 2px;*/
     padding: 5px;
-    border: 1px solid gray;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
     background: repeating-linear-gradient(45deg, #eeeeee 0px 10px, white 10px 20px);
     /*box-sizing: content-box;*/
 }
-
+.content_img {
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 section img {
     border: 1px solid black;
     box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.8);

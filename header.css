@@ -13,7 +13,8 @@ header {
         width:;
         padding: ;
     }
-        .headerimg {     
+        .headerimg {
+            max-width: 100px;    
         }
     .headertitle {
         display: inline-flex;
